@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mexin</title>
+<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+<script src="assets/js/jssor.slider-26.1.5.min.js" type="text/javascript"></script>
+<script>
+ jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-0.7}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+</script>
+
+</head>
+
+<body>
+<div class="top-bar">
+	<div class="container">
+    	<div class="top-nav">
+        	<ul>
+            	<li><a href="#">FORM</a></li>
+                <li>|</li>
+            	<li><a href="#">TERMS</a></li>
+                <li>|</li>
+            	<li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div><!-top-nav->
+        
+        <div class="social-links">
+        	<a href="#" class="facebook"><i class="fa fa-facebook fa-lg"></i></a>
+            <a href="#" class="dribbble"><i class="fa fa-dribbble fa-lg"></i></a>
+            <a href="#" class="vimeo"><i class="fa fa-vimeo fa-lg"></i></a>
+            <a href="#" class="google"><i class="fa fa-google fa-lg"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>
+        </div><!-social-links->
+    
+    </div><!-container->
+</div><!-top-bar->
+
+<header class="clearfix">
+	<div class="container">
+		
+        <div class="logo">
+    		<img src="assets/img/logo.jpg" alt="Mexin">
+    	</div><!-logo->
+        
+        <div class="search-icon">
+        	<input type="search">
+        </div><!-search-icon->
+        
+        <ul class="nav">
+        	<li class="current"><a href="index.html">HOME</a>
+            	<ul>
+                	<li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                </ul>
+            </li>
+            <li><a href="pages.html">PAGES</a></li>
+            <li><a href="features.html">FEATURES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="#">WORK</a></li>
+        </ul>
+	
+    </div><!-container->
+</header><!-header->
+
+<div class="slider">
+	<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="assets/img/001.jpg" />
+                <div data-u="caption" data-t="0" style="position:absolute;top:120px;left:75px;width:470px;height:220px;z-index:0;">
+                    <img style="position:absolute;top:0px;left:0px;width:470px;height:220px;z-index:0;" src="assets/img/c-phone-horizontal.png" />
+                    <div style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0; overflow:hidden;">
+                        <img data-u="caption" data-t="1" style="position:absolute;top:0px;left:0px;width:379px;height:213px;z-index:0;" src="assets/img/c-slide-1.jpg" />
+                        <img data-u="caption" data-t="2" style="position:absolute;top:0px;left:379px;width:379px;height:213px;z-index:0;" src="assets/img/c-slide-3.jpg" />
+                    </div>
+                    <img style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0;" src="assets/img/c-navigator-horizontal.png" />
+                    <img data-u="caption" data-t="3" style="position:absolute;top:476px;left:454px;width:63px;height:77px;z-index:0;" src="assets/img/hand.png" />
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="assets/img/002.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="assets/img/003.jpg" />
+                <div style="position:absolute;top:30px;left:30px;width:480px;height:130px;z-index:0;background-color:rgba(255,188,5,0.8);font-size:40px;font-weight:100;color:#000000;line-height:60px;padding:5px;box-sizing:border-box;">TOUCH SWIPE
+<br />
+                    RESPONSIVE SLIDER
+                </div>
+                <div style="position:absolute;top:300px;left:30px;width:480px;height:130px;z-index:0;background-color:rgba(255,188,5,0.8);font-size:30px;color:#000000;line-height:38px;padding:5px;box-sizing:border-box;">Build your slider with anything, includes image, svg, text, html, photo, picture content</div>
+            </div>
+            <a data-u="any" href="https://www.jssor.com" style="display:none">bootstrap carousel</a>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+</div><!-slider->
+
+<div class="container">
+<div class="clearfix">
+    <div class="one-third">
+    	<div class="icon-section">
+        	<i class="fa fa-cube fa-3x"></i>
+            <h1>Web Hosting</h1>
+            <p>Innovative design always develops In tendem with innovative technology, 
+            and can never be an end in itself. Lorem ipsum dolor</p>
+        </div><!-icon-section->
+    </div><!-one-third->`
+	
+    <div class="one-third">
+    	<div class="icon-section">
+        	<i class="fa fa-tv fa-3x"></i>
+            <h1>Web Design</h1>
+            <p>Innovative design always develops In tendem with innovative technology, 
+            and can never be an end in itself. Lorem ipsum dolor</p>
+        </div><!-icon-section->
+    </div><!-one-third->
+	
+    <div class="one-third">
+    	<div class="icon-section">
+        	<i class="fa fa-globe fa-3x"></i>
+            <h1>Server Management</h1>
+            <p>Innovative design always develops In tendem with innovative technology, 
+            and can never be an end in itself. Lorem ipsum dolor</p>
+        </div><!-icon-section->
+    </div><!-one-third->
+</div><!-clearfix->
+
+<hr class="icon">
+
+<div class="clearfix">
+<aside>
+	<div class="recent">
+    	<h1>Recent Works</h1>
+        <p>Lorem ipsum dolor sit amet ,<br>consectetur adipiscing elit<br>Aenean nisl orci</p>
+        <a href="#" class="after-a">See All</a>
+        <hr>
+    </div><!-recent->
+    
+    <div class="cat-arch">
+    	<h2>Categories</h2>
+        <ul>
+        	<li>Design</li>
+            <hr class="dotted">
+            <li>Print</li>
+            <hr class="dotted">
+            <li>Video</li>
+            <hr class="dotted">
+            <li>Other</li>
+            <hr class="dotted">
+        </ul>
+    </div><!-car-arch->
+    
+    <div class="cat-arch">
+    	<h2>Archives</h2>
+        <ul>
+        	<li>May (2)</li>
+            <hr class="dotted">
+            <li>April (3)</li>
+            <hr class="dotted">
+            <li>March (5)</li>
+            <hr class="dotted">
+            <li>Feb 2012 (1)</li>
+            <hr class="dotted">
+        </ul>
+    </div><!-car-arch->
+</aside>
+
+<article>
+	
+    <div class="save">
+    	<div class="inner-save">
+    		<img src="assets/img/save.jpg" alt="save">
+        	<h3 class="cols">Save the World</h3>
+        	<p>10 MAY 2013 - <span>DESIGN</span>, <span>PRINT</span></p>
+    	</div><!-inner-save->
+        
+        <div class="inner-save">
+    		<img src="assets/img/spoilt.jpg" alt="save">
+        	<h3 class="cols">Spoilt for choice</h3>
+        	<p>10 MAY 2013 - <span>DESIGN</span>, <span>PRINT</span></p>
+    	</div><!-inner-save->
+    </div><!-save->
+    
+    <div class="save">
+    	
+        <div class="inner-save">
+    		<img src="assets/img/mall.jpg" alt="save">
+        	<h3 class="cols">Mall Admirer</h3>
+        	<p>10 MAY 2013 - <span>DESIGN</span>, <span>PRINT</span></p>
+    	</div><!-inner-save->
+        
+        <div class="inner-save">
+    		<img src="assets/img/busy.jpg" alt="save">
+        	<h3 class="cols">Busy girl</h3>
+        	<p>10 MAY 2013 - <span>DESIGN</span>, <span>PRINT</span></p>
+    	</div><!-inner-save->
+    </div><!-save->
+
+</article>
+</div><!-clearfix->
+
+<hr class="solid after">
+
+	<div class="clearfix">
+    	
+        <div class="clean">
+        	<h1>Clean, Flat, Modern & Responsive Template</h1>
+            <p>Minimal design helps viewers navigate though the design.</p>
+        </div><!-clean->
+        
+        <div class="purchase">
+        	<a href="#">Purchase Now</a>
+        </div><!-purchase->
+  
+    </div><!-clearfix->
+
+<hr class="after-clean">
+
+	<div class="only-use clearfix">
+    	<div class="only">
+        	<div class="only-inner">
+        		<h3 class="cols">Only Use what is Necessary</h3>
+        		<img src="assets/img/tv-1.jpg" alt="/">
+        		<p>Aliquam enim enim, pharetra in sodales at, interdum<br>
+        		sit amet dui. Nullam vulputate euismod urna non<br>
+        		pharetra. Phasellus blandit mattis ipsum, ac laure et<br>
+                lorem lacinia et. Cras et ligula libero.</p>
+                <a href="#" class="after-a">Haretra in sodales atsen interdum</a>
+        	</div><!-only-inner->
+        </div><!-only->
+        
+        <div class="use">
+        	<div class="only-inner">
+        		<h3 class="cols">Clean and User friendly layouts</h3>
+        		<img src="assets/img/tv-2.jpg" alt="/">
+        		<p>Aliquam enim enim, pharetra in sodales at, interdum<br>
+        		sit amet dui. Nullam vulputate euismod urna non<br>
+        		pharetra. Phasellus blandit mattis ipsum, ac laure et<br>
+                lorem lacinia et. Cras et ligula libero.</p>
+                <a href="#" class="after-a">Haretra in sodales atsen interdum</a>
+        	</div><!-only-inner->
+        </div><!-use->
+    </div><!-only-use->
+
+<h1 class="latest">LATEST FROM BLOG</h1>
+<hr class="after-latest solid">
+
+	<div class="jobs">
+		<div class="one-third">
+    		<div class="job">
+        	<img src="assets/img/job1.jpg" alt="/">
+            <h1>Job Seeking Out of Your Industry</h1>
+            <p>10 MAY 2013</p>
+        	</div><!-job->
+    	</div><!-one-third->
+    
+		<div class="one-third">
+    		<div class="job">
+        	<img src="assets/img/job2.jpg" alt="/">
+            <h1>Magnifying Uses of Small Spaces</h1>
+            <p>10 MAY 2013</p>
+        	</div><!-job->
+    	</div><!-one-third->
+    
+		<div class="one-third">
+    		<div class="job">
+        	<img src="assets/img/job3.jpg" alt="/">
+            <h1>What Your College Degree Will Be Worth</h1>
+            <p>10 MAY 2013</p>
+        	</div><!-job->
+    	</div><!-one-third->
+	</div><!-jobs->
+
+	<div class="quote">
+    	<img src="assets/img/containfull.jpg" alt="/">
+        <h1>QUOTE OF THE WEEK</h1>
+        <h2>" Care and accuracy in the design process show respect towards the consumer. "</h2>
+        <p>-John Smith - <span>Manager at Mexin</span></p>
+    </div><!-quote->
+
+</div><!-container->
+
+<footer class="clearfix">
+<hr class="footer">
+	<div class="container">
+    	<div class="foot-inner clearfix">
+        
+        	<div class="one-third">
+            	<div class="foot-1">
+                	<h1>CONTACT INFORMATION</h1>
+                    <hr class="solid">
+                    <p><strong>Address:</strong> No.28 - 63739 street lorem ipsum City,
+                    <br>Country</p>
+                    <p><strong>Phone:</strong><span> +1 (234) 567 8901</span></p>
+                    <p><strong>Fax:</strong> +1 (234) 567 8901</p>
+                    <p><strong>Email:</strong> support@yoursite.com</p>
+                </div><!-foot-1->
+                
+                <div class="foot-2">
+                	<h1>STAY CONNECTED</h1>
+                    <hr class="solid">
+                    <ul>
+                    	<li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play fa-lg"></i></a></li>
+                    </ul>
+                </div><!-foot-2->
+                           
+            </div><!-one-third->
+            
+            <div class="one-third">
+            	<div class="foot-1">
+                	<h1>LATEST TWEET</h1>
+                    <hr class="solid">
+                    <div class="twitt">
+                    	<i class="fa fa-twitter fa-4x"></i>
+                    	<h2>@webnus</h2>
+                    </div>
+                    <p class="webnus">Check out this great #<span>themeforest</span> item<br>
+                    'Florida - Premium Multipurpose<br>Responsive Theme'<br>
+                    <span>http://mjskdevHHPaktan</span></p>
+                </div><!-foot-1->           
+            </div><!-one-third->
+            
+            <div class="one-third">
+            	<div class="foot-1">
+                	<h1>FLICKER PHOTOSTREAM</h1>
+                    <hr class="solid">
+                    <div class="flicker">
+                    	<ul>
+                        	<li><a href="#"><img src="assets/img/flicker1.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker2.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker3.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker4.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker5.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker6.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker7.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker8.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker9.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker10.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker11.jpg"></a></li>
+                            <li><a href="#"><img src="assets/img/flicker12.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div><!-foot-1->           
+            </div><!-one-third->
+        
+        </div><!-foot-inner->
+    </div><!-container->
+
+<hr class="foot-end">
+
+	<div class="container">
+    	<div class="foot-last">
+        	<p>&copy 2012. All Right Reserved. Powered By <span>WordPress</span></p>
+            <img src="assets/img/footerlogo.jpg" alt="/">
+        </div><!-foot-last->
+    </div><!-container->
+    
+</footer>
+</body>
+</html>
